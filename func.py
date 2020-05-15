@@ -18,3 +18,9 @@ def primes():
         if c:
             arr.append(n)
             yield n
+
+def factorial(x):
+    prod = 1
+    for n in range(2, x+1):
+        prod *= n
+    return prod

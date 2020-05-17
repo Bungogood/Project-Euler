@@ -18,5 +18,5 @@ def f(tri):
     return tri[0][0]
 
 if __name__ == "__main__":
-    tri = load("files/P18-triangle.txt")
+    tri = load("files/P018-triangle.txt")
     print(f(tri))

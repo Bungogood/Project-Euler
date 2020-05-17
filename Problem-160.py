@@ -14,9 +14,9 @@ def f(x):
             print(n)
             if n % 10**(p+1) == 0:
                 p+=1
+        while n%10==0:
+            n //= 10
         fac *= n
-        while fac%10==0:
-            fac //= 10
         fac %= 10**5
     return fac
 

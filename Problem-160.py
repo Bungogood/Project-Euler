@@ -8,9 +8,12 @@ Factorial trailing digits
 
 def f(x):
     fac = 1
+    p = 0
     for n in range(1, x+1):
-        if n % 10000000 == 0:
+        if n % 10**p == 0:
             print(n)
+            if n % 10**(p+1) == 0:
+                p+=1
         fac *= n
         while fac%10==0:
             fac //= 10
